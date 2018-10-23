@@ -8,7 +8,7 @@
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
     # Change to allow different localhost or heroku
-    origins 'http://localhost:8000'
+    origins '*'
 
     resource '*',
       headers: :any,
