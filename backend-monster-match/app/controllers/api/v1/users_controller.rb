@@ -4,4 +4,15 @@ class Api::V1::UsersController < ApplicationController
     users = User.all
     render json: users.to_json
   end
+
+  def create
+    user = User.create(costume_params)
+    render json: user.to_json
+  end
+
+private
+
+  def costume_params
+    params.permit(:username, :firstname, :lastname)
+  end
 end

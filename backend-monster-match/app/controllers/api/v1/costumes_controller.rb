@@ -11,10 +11,7 @@ class Api::V1::CostumesController < ApplicationController
   end
 
   def create
-      # Calling with mock params results in ActiveRecord Forbidden Attribute errorx
-      debugger
       @costume = Costume.create(costume_params)
-      byebug
       render json: @costume.to_json
   end
 
@@ -27,9 +24,4 @@ private
   def find_costume
     @costume = Costume.find(params[:id])
   end
-
-  def find_user
-    @user = User.find(params[:user_id])
-  end
-
 end
