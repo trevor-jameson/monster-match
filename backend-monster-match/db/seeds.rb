@@ -9,6 +9,7 @@ user2 = User.create(firstname: "Mickey", lastname: "Myers", username: "xXneckbre
 user3 = User.create(firstname: "Chad", lastname: "Wellington", username: "thatjockguy54")
 user4 = User.create(firstname: "IT", lastname: "Clowinsky", username: "hehehehb00")
 user5 = User.create(firstname: "Stephen", lastname: "King", username: "@llHailTheKing")
+user6 = User.create(firstname: "The", lastname: "Blob", username: "WiggleWiggleWiggle")
 
 costume1 = Costume.create(user: user1, gender: "unisex", size: "m", category: "casual", spookiness: 2, theme: "prof", parts: "chest", img_url: "https://images-na.ssl-images-amazon.com/images/I/81mSg3VTfZL._UY879_.jpg", name: "lab coat")
 costume2 = Costume.create(user: user2, gender: "m", size: "s", category: "sexy", spookiness: 1, theme: "char", parts: "head", img_url: "https://i.pinimg.com/originals/af/43/5c/af435c6bdf2fd5cf720f97b1046fe2c0.jpg", name: "Dwight K. Schrute Wig")
@@ -16,3 +17,11 @@ costume3 = Costume.create(user: user3, gender: "unisex", size: "l", category: "f
 costume4 = Costume.create(user: user4, gender: "unisex", size: "child", category: "scary", spookiness: 5, theme: "monster", parts: "whole", img_url: "https://i.pinimg.com/originals/93/3a/2b/933a2b8a02cad655065600085967e649.jpg", name: "Eldritch Horror")
 costume5 = Costume.create(user: user5, gender: "f", size: "m", category: "cosplay", spookiness: 3, theme: "celeb", parts: "legs", img_url: "https://images-na.ssl-images-amazon.com/images/I/71-MbNuHCtL._UX679_.jpg", name: "Elvis' Pants")
 costume6 = Costume.create(user: user1, gender: "f", size: "s", category: "funny", spookiness: 4, theme: "char", parts: "feet", img_url: "https://photos.cdn-outlet.com/photos/options/8155231-30820-1A-zoomin.jpg", name: "Cinderella Crocs")
+
+listing1 = Listing.create(costume: costume1, description: "Slightly used lab coat for rent. Minimal viscera and/or caustic chemical stains.", status: "posted")
+listing2 = Listing.create(costume: costume2, description: "Super hot man wig for manly men. Fact. Has a mild beet odor. Will wash with vinegar upon request", status: "posted")
+listing3 = Listing.create(costume: costume3, description: "Got some sick beets from that Schrute guy. Looking to DIY a punny costume piece. PM me with an offer", status: "posted")
+listing4 = Listing.create(costume: costume4, description: "Cahf ah nafl mglw'nafh hh' ahor syha'h ah'legeth, ng llll or'azath syha'hnahh n'ghftephai n'gha ahornah ah'mglw'nafh", status: "requested")
+
+request1 = Request.create(user: user6, listing: listing4)
+request2 = Request.create(user: user5, listing: listing4)

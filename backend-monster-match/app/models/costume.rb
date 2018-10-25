@@ -1,5 +1,6 @@
 class Costume < ApplicationRecord
   belongs_to :user
+  has_many :listings
 
   # Uncomment once seed data is available
   validates :gender, inclusion: {in: %w(m f unisex)}
