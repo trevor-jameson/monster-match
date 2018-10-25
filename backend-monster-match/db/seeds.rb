@@ -23,5 +23,6 @@ listing2 = Listing.create(costume: costume2, description: "Super hot man wig for
 listing3 = Listing.create(costume: costume3, description: "Got some sick beets from that Schrute guy. Looking to DIY a punny costume piece. PM me with an offer", status: "posted")
 listing4 = Listing.create(costume: costume4, description: "Cahf ah nafl mglw'nafh hh' ahor syha'h ah'legeth, ng llll or'azath syha'hnahh n'ghftephai n'gha ahornah ah'mglw'nafh", status: "requested")
 
-request1 = Request.create(user: user6, listing: listing4)
+request1 = Request.create(user: user4, listing: listing4)
 request2 = Request.create(user: user5, listing: listing4)
+request3 = Request.create(user: user1, listing: listing1)
