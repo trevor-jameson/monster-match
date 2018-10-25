@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   has_many :costumes
+  has_many :listings, through: :costumes
 
   # Uncomment once seed data is available
   validates :firstname, presence: true

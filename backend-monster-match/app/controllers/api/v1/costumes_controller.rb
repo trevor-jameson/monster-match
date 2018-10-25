@@ -11,8 +11,8 @@ class Api::V1::CostumesController < ApplicationController
   end
 
   def create
-      @costume = Costume.create(costume_params)
-      render json: @costume.to_json
+    @costume = Costume.create(costume_params)
+    render json: @costume.to_json
   end
 
 private
